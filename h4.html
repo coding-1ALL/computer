@@ -1,0 +1,29 @@
+<html>
+<head>
+<style>
+.moveable{position:
+absolute;
+}
+</style>
+<script type="text/javascript">
+var x=5;var y=5; var
+dest_x=300;var dest_y=300;
+var internal=10; function
+moveimage()
+{
+if(x<dest_x) x=x+internal;if(y<dest_y)y=+internal;
+document.getElementById("ufo").style.top=y+"px";
+document.getelementbyId("ufo").style.left=x+"px";
+if((x+internal<dest_x)&&(y+internal<dest_y))
+{
+window.settimeout("moveimage()",100);
+}
+}
+</script>
+</head>
+<body onload="moveimage()">
+<div id="ufo"class="moveable">
+<img src="C:\Users\Dhivya\Pictures\lossu.jpg"alt="lossu" alt=""/)
+</div>
+</body>
+</html>

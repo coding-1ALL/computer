@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>simple calculator</title>
+      <style>
+         h2
+         {
+            text-align: center;
+            background-color:red;
+            color: white;
+            border-style: double;
+            padding-right: 25px;
+            width:350px;
+          }
+         input
+         {
+            width: 30px;
+            background-color:1f1f1f1f;
+            color:black;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 5px;
+            font-size: larger;
+            position:sticky;
+            
+         }
+         #calc
+         {
+            width: 200px;
+            background-color:#f1f1f1;
+            color:black;
+            border:1px solid brown;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 5px;
+         }
+         #clear
+         {
+            width: 200px;
+            background-color:#f1f1f1;
+            color:black;
+            border:1px solid brown;
+            font-size:larger;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 5px;
+         }
+   
+      
+         </style>
+      </head>
+      <body>
+         <h2>simple calculator using javascript</h2>
+         <div class="calc_form">
+            <form name="form1">
+               <input id="calc" type="text" name="results">
+               <br> <br>
+               <input type="button" value="1" onclick="form1.results.value = 
+               form1.results.value+1">
+               <input type="button" value="2"onclick="form1.results.value = 
+               form1.results.value+2"> 
+               <input type="button" value="3"onclick="form1.results.value = 
+               form1.results.value+3">
+               <input type="button" value="+" onclick="form1.results.value = 
+               form1.results.value+  '+'">
+
+               <br> <br>
+               <input type="button" value="4"onclick="form1.results.value = 
+               form1.results.value+4">
+               <input type="button" value="5"onclick="form1.results.value = 
+               form1.results.value+5"> 
+               <input type="button" value="6"onclick="form1.results.value = 
+               form1.results.value+6">
+               <input type="button" id="equals" value="-"onclick="form1.results.value = 
+               form1.results.value+'-'">
+
+               <br> <br>
+               <input type="button" value="7"onclick="form1.results.value = 
+               form1.results.value+7">
+               <input type="button" value="8"onclick="form1.results.value = 
+               form1.results.value+8"> 
+               <input type="button" value="9"onclick="form1.results.value = 
+               form1.results.value+9">
+               <input type="button" value="*"onclick="form1.results.value = 
+               form1.results.value+ '*'">
+
+               <br> <br>
+               <input type="button" value="0"onclick="form1.results.value = 
+               form1.results.value+0">
+               <input type="button" value="/"onclick="form1.results.value = 
+               form1.results.value+/"> 
+               <input type="button" value="."onclick="form1.results.value = 
+               form1.results.value+.">
+               <input type="button" value="="
+                onclick="form1.results.value = eval (form1.results.value)">
+
+                <br>
+                <input type="button" id="clear" value="clear all"
+                onclick="form1.results.value =''"><br>
+            </form>
+         </div>
+      </body>
+</html>
